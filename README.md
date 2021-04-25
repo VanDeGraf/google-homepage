@@ -1,0 +1,1 @@
+Learning project of Google homepage copy, using HTML\CSS only;
