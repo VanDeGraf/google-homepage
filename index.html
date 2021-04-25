@@ -2,25 +2,100 @@
 
 <head>
     <title>Google</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        html, body {
+        html,
+        body {
             height: 100%;
             margin: 0;
             padding: 0;
         }
+
         body {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 6px 0;
+        }
+
+        #header-buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20px;
+        }
+
+        .header-link {
+            color: #000;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            padding-left: 15px;
+        }
+
+        .header-link:hover {
+            text-decoration: underline;
+        }
+
+        #products {
+            border-radius: 9999px;
+            overflow: hidden;
+            display: flex;
+            width: min-content;
+            padding: 8px;
+            color: #5f6368;
+            margin-left: 15px;
+        }
+
+        #products:hover {
+            background-color: #f2f2f2;
+        }
+
+        #login {
+            color: #fff;
+            border-radius: 4px;            
+            background-color: #1a73e8;
+            font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 9px 23px;
+            margin-left: 15px;
+        }
+
+        #login:hover {
+            background-color: #2b7de9;
+            box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+        }
+
+        #filler {
+            flex-grow: 1;
         }
     </style>
 </head>
 
 <body>
     <header id="header">
-
+        <div id="header-buttons">
+            <a class="header-link" href="#">Mail</a>
+            <a class="header-link" href="#">Images</a>
+            <a href="#" id="products">
+                <span class="material-icons">
+                    apps
+                </span>
+            </a>
+            <a href="#" id="login">Login</a>
+        </div>
     </header>
     <div id="logo">
-
+        <img src="https://www.google.ru/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" />
     </div>
     <div id="search">
 
